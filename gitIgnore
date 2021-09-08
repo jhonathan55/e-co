@@ -1,0 +1,297 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/windows,osx,android,androidstudio,angular
+# Edite en https://www.toptal.com/developers/gitignore?templates=windows,osx,android,androidstudio,angular
+
+### Android ###
+# Archivos de aplicación creados
+* .apk
+* .aar
+* .ap_
+* .aab
+
+# Archivos para ART / Dalvik VM
+* .dex
+
+# Archivos de clase Java
+*.clase
+
+# Archivos generados
+compartimiento/
+gen /
+fuera/
+# Descomente la siguiente línea en caso de que lo necesite y no tenga los archivos de tipo de compilación de lanzamiento en su aplicación
+# liberación/
+
+# Archivos Gradle
+.gradle /
+construir/
+
+# Archivo de configuración local (ruta sdk, etc.)
+propiedades.locales
+
+# Carpeta Proguard generada por Eclipse
+proguard /
+
+# Archivos de registro
+*.Iniciar sesión
+
+# Archivos temporales del editor de navegación de Android Studio
+.navegación/
+
+# Carpeta de capturas de Android Studio
+capturas /
+
+# IntelliJ
+* .iml
+.idea / workspace.xml
+.idea / tasks.xml
+.idea / gradle.xml
+.idea / assetWizardSettings.xml
+.idea / diccionarios
+.idea / bibliotecas
+.idea / jarRepositories.xml
+# Android Studio 3 en archivo .gitignore.
+.idea / cachés
+.idea / modules.xml
+# Comente la siguiente línea si mantener la posición de los elementos en el Editor de navegación es relevante para usted
+.idea / navEditor.xml
+
+# Archivos de almacén de claves
+# Descomente las siguientes líneas si no desea verificar los archivos del almacén de claves en formato.
+# *. jks
+# *. almacén de claves
+
+# Carpeta de compilación nativa externa generada en Android Studio 2.2 y posterior
+.externalNativeBuild
+.cxx /
+
+# Servicios de Google (por ejemplo, API o Firebase)
+# google-services.json
+
+# Línea libre
+freeline.py
+Línea libre/
+freeline_project_description.json
+
+# carril rápido
+fastlane / report.xml
+fastlane / Preview.html
+Fastlane / capturas de pantalla
+fastlane / salida_prueba
+fastlane / readme.md
+
+# Control de versiones
+vcs.xml
+
+# pelusa
+pelusa / intermedios /
+pelusa / generado /
+pelusa / salidas /
+pelusa / tmp /
+# pelusa / informes /
+
+# Perfiles de Android
+* .hprof
+
+### Parche de Android ###
+gen-external-apklibs
+output.json
+
+# Se introdujo el reemplazo de directorios .externalNativeBuild
+# con Android Studio 3.5.
+
+### Angular ###
+## Angular ##
+# salida compilada
+dist /
+tmp /
+aplicación / ** / *. js
+aplicación / ** / *. js.map
+
+# dependencias
+módulos_nodo /
+bower_components /
+
+# IDE y editores
+.idea/
+
+# misceláneo
+.sass-cache /
+connect.lock /
+cobertura/
+libpeerconnection.log /
+npm-debug.log
+testem.log
+mecanografia /
+
+# e2e
+e2e / *. js
+e2e / *. map
+
+# Archivos de sistema
+.DS_Store /
+
+### OSX ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# El icono debe terminar con dos \ r
+Icono
+
+
+# Miniaturas
+._ *
+
+# Archivos que pueden aparecer en la raíz de un volumen
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Traspa
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directorios potencialmente creados en recursos compartidos de AFP remotos
+.AppleDB
+.AppleDesktop
+Carpeta de basura de red
+Elementos temporales
+.apdisk
+
+### Windows ###
+# Archivos de caché de miniaturas de Windows
+Thumbs.db
+Thumbs.db: encriptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Archivo de volcado
+* .stackdump
+
+# Archivo de configuración de carpeta
+[Dd] esktop.ini
+
+# Papelera de reciclaje utilizada en archivos compartidos
+$ RECICLAJE.BIN /
+
+# Archivos de Windows Installer
+*.taxi
+* .msi
+* .msix
+* .msm
+* .msp
+
+# Accesos directos de Windows
+* .lnk
+
+### AndroidStudio ###
+# Cubre los archivos que se ignorarán para el desarrollo de Android con Android Studio.
+
+# Archivos de aplicación creados
+
+# Archivos para ART / Dalvik VM
+
+# Archivos de clase Java
+
+# Archivos generados
+
+# Archivos Gradle
+.gradle
+
+# Firma de archivos
+.firma/
+
+# Archivo de configuración local (ruta sdk, etc.)
+
+# Carpeta Proguard generada por Eclipse
+
+# Archivos de registro
+
+# Android Studio
+/*/construir/
+/*/local.properties
+/*/fuera
+/*/*/construir
+/*/*/producción
+* .ipr
+* ~
+* .swp
+
+# Archivos de almacén de claves
+* .jks
+* .keystore
+
+# Servicios de Google (por ejemplo, API o Firebase)
+# google-services.json
+
+# Parche de Android
+
+# Carpeta de compilación nativa externa generada en Android Studio 2.2 y posterior
+
+# NDK
+obj /
+
+# IntelliJ IDEA
+* .iws
+/fuera/
+
+# Configuraciones específicas del usuario
+.idea / caches /
+.idea / bibliotecas /
+.idea / estante /
+.idea / .name
+.idea / compiler.xml
+.idea / copyright / profiles_settings.xml
+.idea / encodings.xml
+.idea / misc.xml
+.idea / scopes / scope_settings.xml
+.idea / vcs.xml
+.idea / jsLibraryMappings.xml
+.idea / datasources.xml
+.idea / dataSources.ids
+.idea / sqlDataSources.xml
+.idea / dynamic.xml
+.idea / uiDesigner.xml
+
+# Archivos específicos del sistema operativo
+.DS_Store?
+
+# Archivos de proyecto heredados de Eclipse
+.classpath
+.proyecto
+.cproyecto
+.ajustes/
+
+# Herramientas móviles para Java (J2ME)
+.mtj.tmp /
+
+# Paquetes de archivos #
+*.guerra
+*.oreja
+
+# registros de fallas de la máquina virtual (Referencia: http://www.java.com/en/download/help/error_hotspot.xml)
+hs_err_pid *
+
+## Archivos específicos de complementos:
+
+Complemento # mpeltonen / sbt-idea
+.idea_modules /
+
+# Complemento JIRA
+atlassian-ide-plugin.xml
+
+# Complemento de Mongo Explorer
+.idea / mongoSettings.xml
+
+# Complemento de Crashlytics (para Android Studio e IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+### Parche de AndroidStudio ###
+
+! /gradle/wrapper/gradle-wrapper.jar
+
+# Fin de https://www.toptal.com/developers/gitignore/api/windows,osx,android,androidstudio,angular
