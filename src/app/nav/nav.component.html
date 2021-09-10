@@ -1,5 +1,7 @@
-<mat-toolbar>
-    <span>Tienda Yuyito redes sociales</span>
+<!--Class d-nene d-md-flex oculta los toolbar cuando la pantalla es inferior al md de tamño usando bootstrap-->
+
+<mat-toolbar class="d-none d-md-flex">
+    <span>redes sociales</span>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon><i class="fab fa-facebook"></i></mat-icon>
@@ -12,8 +14,9 @@
     </button>
 </mat-toolbar>
 
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="d-none d-md-flex">
     <mat-toolbar-row>
+        <span class="example-spacer"></span>
         <span>Tienda Yuyito</span>
         <span class="example-spacer"></span>
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -35,41 +38,111 @@
 
     <mat-toolbar-row>
 
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-        </button>
         <span class="example-spacer"></span>
         <button mat-raised-button [matMenuTriggerFor]="mujer" color="accent" class="m-2">Mujer</button>
         <button mat-raised-button [matMenuTriggerFor]="hombre" class="m-2">Hombre</button>
         <mat-menu #mujer="matMenu">
-            <button mat-menu-item >Ver Todo</button>
-            <button mat-menu-item >Nueva temporada</button>
-            <button mat-menu-item >Blusas y poleras</button>
-            <button mat-menu-item >Chaquetas y parkas</button>
-            <button mat-menu-item >Faldas</button>
-            <button mat-menu-item >Jeans</button>
-            <button mat-menu-item >Polerones y chiporros</button>
+            <button mat-menu-item>Ver Todo</button>
+            <button mat-menu-item>Nueva temporada</button>
+            <button mat-menu-item>Blusas y poleras</button>
+            <button mat-menu-item>Chaquetas y parkas</button>
+            <button mat-menu-item>Faldas</button>
+            <button mat-menu-item>Jeans</button>
+            <button mat-menu-item>Polerones y chiporros</button>
         </mat-menu>
         <mat-menu #hombre="matMenu">
-            <button mat-menu-item >Ver Todo</button>
-            <button mat-menu-item >Nueva temporada</button>
-            <button mat-menu-item >Camisas y guayaberas</button>
-            <button mat-menu-item >Chalecos y sweaters</button>
-            <button mat-menu-item >Pantalones y buzos</button>
-            <button mat-menu-item >Jeans</button>
-            <button mat-menu-item >Polerones y Polar</button>
+            <button mat-menu-item>Ver Todo</button>
+            <button mat-menu-item>Nueva temporada</button>
+            <button mat-menu-item>Camisas y guayaberas</button>
+            <button mat-menu-item>Chalecos y sweaters</button>
+            <button mat-menu-item>Pantalones y buzos</button>
+            <button mat-menu-item>Jeans</button>
+            <button mat-menu-item>Polerones y Polar</button>
         </mat-menu>
         <button mat-raised-button color="warn" class="m-2">Liquidación</button>
-        
 
 
         <span class="example-spacer"></span>
-       
+
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
             <mat-icon>share</mat-icon>
         </button>
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
             <mat-icon>more_vert</mat-icon>
         </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<!--Responsive-->
+<!--Class d-flex d-md-none oculta los toolbar cuando la pantalla es grande usando bootstrap-->
+<mat-toolbar class="d-flex d-md-none">
+    <span> redes sociales</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon><i class="fab fa-facebook"></i></mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon><i class="fab fa-whatsapp"></i></mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>mail_outline</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-toolbar color="primary" class="d-flex d-md-none">
+    <mat-toolbar-row>
+        <span class="example-spacer"></span>
+        <span>Tienda Yuyito</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+
+        <div class="dropdown">
+            <button mat-icon-button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <mat-icon>login</mat-icon>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Crear cuenta</a></li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row >
+        <!--Event click captura el click del ngIF-->
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="hide=!hide">
+            <mat-icon>menu</mat-icon>
+        </button>
+        
+        <span class="example-spacer"></span>
+
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+    <!--style="height: 100%; permite que este toolbar sea parte del anteriro-->
+    <mat-toolbar-row style="height: 100%;" *ngIf="!hide">
+        <!--class="w-100" toma el 100% del ancho de la selección-->
+        <mat-selection-list  [multiple]="false" class="w-100">
+            <mat-divider></mat-divider>
+            <mat-list-option [matMenuTriggerFor]="mujer">
+                Mujer
+            </mat-list-option>
+            <mat-divider></mat-divider>
+            <mat-list-option [matMenuTriggerFor]="hombre">
+                Hombre
+            </mat-list-option>
+            <mat-divider></mat-divider>
+            <mat-list-option>
+                Liquidación
+            </mat-list-option>
+            <mat-divider></mat-divider>
+        </mat-selection-list>
+
     </mat-toolbar-row>
 </mat-toolbar>

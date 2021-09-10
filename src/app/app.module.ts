@@ -14,6 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,8 @@
 .example-spacer {
     flex: 1 1 auto;
   }
- 
+  /*color del divider*/
+.mat-divider{
+border-top-color: azure;
+}
 
